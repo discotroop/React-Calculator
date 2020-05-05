@@ -4,7 +4,7 @@ import './Clear.css';
 class Clear extends React.Component {
   render() {
     return (
-        <div className="clear">
+        <div className="clear" onClick={() => this.props.handleClick()}>
             {this.props.children}
         </div> )
     }
