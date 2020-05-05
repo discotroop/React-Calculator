@@ -12,7 +12,8 @@
 }
 
 .operator {
-    background-color: rgb(300, 100, 0);
-    color: white;
+    background-color: lightblue;
+    /* background-color: rgb(300, 100, 0); */
+    color: rgb(100, 100, 100);
     outline: 1px solid #888;
 }
