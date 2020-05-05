@@ -1,4 +1,4 @@
-.button {
+.clear {
     display: flex;
     height: 4em;
     flex: 1;
@@ -8,11 +8,5 @@
     font-size: 1.4em;
     background-color: rgb(225, 225, 225);
     color: #888;
-    outline: 1px solid #888;
-}
-
-.operator {
-    background-color: rgb(300, 100, 0);
-    color: white;
     outline: 1px solid #888;
 }

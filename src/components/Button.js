@@ -7,7 +7,10 @@ class Button extends React.Component {
   }
   render() {
     return (
-        <div className={`button ${this.isOperator(this.props.children) ? "" : "operator"}`} >
+        <div className={`button 
+        ${this.isOperator(this.props.children) ? "" : "operator"}`} 
+        onClick={() => this.props.handleclick(this.props.children)}
+        >
             {this.props.children}
         </div> )
     }
