@@ -2,6 +2,8 @@
 
 A basic calculator built in React. This is version 1. I Plan to expand the interface and functionality over time.
 
+Demo the Calculator here: https://discotroop.github.io/react-calculator/
+
 Users can perform basic math functions by clicking the onscreen buttons.
 
 Supported Function:
