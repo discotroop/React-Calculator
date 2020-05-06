@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/git@github.com:discotroop/react-calculator.git/static/css/main.debe0f46.chunk.css",
+    "main.js": "/git@github.com:discotroop/react-calculator.git/static/js/main.217e6efe.chunk.js",
+    "main.js.map": "/git@github.com:discotroop/react-calculator.git/static/js/main.217e6efe.chunk.js.map",
+    "runtime-main.js": "/git@github.com:discotroop/react-calculator.git/static/js/runtime-main.81505db4.js",
+    "runtime-main.js.map": "/git@github.com:discotroop/react-calculator.git/static/js/runtime-main.81505db4.js.map",
+    "static/js/2.8be96392.chunk.js": "/git@github.com:discotroop/react-calculator.git/static/js/2.8be96392.chunk.js",
+    "static/js/2.8be96392.chunk.js.map": "/git@github.com:discotroop/react-calculator.git/static/js/2.8be96392.chunk.js.map",
+    "index.html": "/git@github.com:discotroop/react-calculator.git/index.html",
+    "precache-manifest.3527fcfd189bf754767d3a0b5f4eee5d.js": "/git@github.com:discotroop/react-calculator.git/precache-manifest.3527fcfd189bf754767d3a0b5f4eee5d.js",
+    "service-worker.js": "/git@github.com:discotroop/react-calculator.git/service-worker.js",
+    "static/css/main.debe0f46.chunk.css.map": "/git@github.com:discotroop/react-calculator.git/static/css/main.debe0f46.chunk.css.map",
+    "static/js/2.8be96392.chunk.js.LICENSE.txt": "/git@github.com:discotroop/react-calculator.git/static/js/2.8be96392.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81505db4.js",
+    "static/js/2.8be96392.chunk.js",
+    "static/css/main.debe0f46.chunk.css",
+    "static/js/main.217e6efe.chunk.js"
+  ]
+}
