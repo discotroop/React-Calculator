@@ -15,7 +15,6 @@ class App extends React.Component {
     }
   }
   addToInput = val => {
-    console.log(val);
     this.setState({ input: this.state.input + val })
   }
   zeroToInput = val => {
@@ -26,26 +25,58 @@ class App extends React.Component {
     }
   }
   setOperator = val => {
+    if (this.state.previousNumber === "") {
+      this.setState({
+        previousNumber: this.state.input
+      })
+    }
     this.setState({ 
-      previousNumber: this.state.input,
-      operator: val
+      operator: val,
+      input: ""
      })
-    console.log(this.state.operator);
+    this.setState();
   }
-  resolveInputs = val => {
+  parseNumbers = val => {
+    if(val.indexOf('.' !== -1)) {
+      return parseFloat(val);
+    } else {
+      return parseInt(val);
+    }
+  }
+  resolveInputs = () => {
+    let result = 0;
+    let operator = this.state.operator;
+    let previous = this.parseNumbers(this.state.previousNumber);
+    let current = this.parseNumbers(this.state.input)
     if (this.state.operator === "") {
       return;
+    } else {
+      if(operator === "+") {
+        result = previous + current;
+      } else if (operator === "*") {
+        result = previous * current;
+      } else if (operator === "/") {
+        result = previous/current;
+      } else if (operator === "-") {
+        result = previous - current;
+      }
     }
+    this.setState({
+      input: "",
+      previousNumber: result.toString(),
+      operator: ""
+    })
   }
   clearInput = val => {
     this.setState({ input: ""});
   }
+  
   render() {
    return (
     <div className="App">
       <div className="calc-container">
         <div className="row">
-          <Input input={this.state.input} previousInput={this.state.previousNumber + this.state.operator}></Input>
+          <Input input={this.state.input} previousInput={this.state.previousNumber + " " + this.state.operator}></Input>
         </div>
         <div className="row">
           <Button handleClick={this.addToInput}>7</Button>
