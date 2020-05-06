@@ -1,5 +1,6 @@
 {
   "name": "react-calculator",
+  "homepage": "https://git@github.com:discotroop/react-calculator.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
